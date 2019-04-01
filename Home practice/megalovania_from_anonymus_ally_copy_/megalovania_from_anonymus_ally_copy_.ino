@@ -75,25 +75,25 @@ digitalWrite(LedPin_2, LOW);
 digitalWrite(LedPin_1, HIGH);
 tone(pinBuzz,261,125);//C4(mi
 digitalWrite(LedPin_1, LOW);
-digitalWrite(LedPin_2, HIGH);ddle)     
+digitalWrite(LedPin_2, HIGH);   
 delay(62);
 digitalWrite(LedPin_2, LOW);
 digitalWrite(LedPin_1, HIGH);
 tone(pinBuzz,261,125);//C4(mi
 digitalWrite(LedPin_1, LOW);
-digitalWrite(LedPin_2, HIGH);ddle)     
+digitalWrite(LedPin_2, HIGH);   
 delay(62);
 digitalWrite(LedPin_2, LOW);
 digitalWrite(LedPin_1, HIGH);
 tone(pinBuzz,261,125);//C4(mi
 digitalWrite(LedPin_1, LOW);
-digitalWrite(LedPin_2, HIGH);ddle)     
+digitalWrite(LedPin_2, HIGH);   
 delay(62);
 digitalWrite(LedPin_2, LOW);
 digitalWrite(LedPin_1, HIGH);
 tone(pinBuzz,261,125);//C4(mi
 digitalWrite(LedPin_1, LOW);
-digitalWrite(LedPin_2, HIGH);ddle)     
+digitalWrite(LedPin_2, HIGH);   
 delay(62);
 digitalWrite(LedPin_2, LOW);
 digitalWrite(LedPin_1, HIGH);
@@ -339,25 +339,25 @@ digitalWrite(LedPin_2, LOW);
 digitalWrite(LedPin_1, HIGH);
 tone(pinBuzz,261,125);//C4(mi
 digitalWrite(LedPin_1, LOW);
-digitalWrite(LedPin_2, HIGH);ddle)     
+digitalWrite(LedPin_2, HIGH);   
 delay(62);
 digitalWrite(LedPin_2, LOW);
 digitalWrite(LedPin_1, HIGH);
 tone(pinBuzz,261,125);//C4(mi
 digitalWrite(LedPin_1, LOW);
-digitalWrite(LedPin_2, HIGH);ddle)     
+digitalWrite(LedPin_2, HIGH);   
 delay(62);
 digitalWrite(LedPin_2, LOW);
 digitalWrite(LedPin_1, HIGH);
 tone(pinBuzz,261,125);//C4(mi
 digitalWrite(LedPin_1, LOW);
-digitalWrite(LedPin_2, HIGH);ddle)     
+digitalWrite(LedPin_2, HIGH);   
 delay(62);
 digitalWrite(LedPin_2, LOW);
 digitalWrite(LedPin_1, HIGH);
 tone(pinBuzz,261,125);//C4(mi
 digitalWrite(LedPin_1, LOW);
-digitalWrite(LedPin_2, HIGH);ddle)     
+digitalWrite(LedPin_2, HIGH);   
 delay(62);
 digitalWrite(LedPin_2, LOW);
 digitalWrite(LedPin_1, HIGH);
@@ -2268,7 +2268,7 @@ digitalWrite(LedPin_2, LOW);
 digitalWrite(LedPin_1, HIGH);
 tone(pinBuzz,261,125);//C4(mi
 digitalWrite(LedPin_1, LOW);
-digitalWrite(LedPin_2, HIGH);ddle)     
+digitalWrite(LedPin_2, HIGH);   
 delay(125);
 digitalWrite(LedPin_2, LOW);
 digitalWrite(LedPin_1, HIGH);
@@ -2280,7 +2280,7 @@ digitalWrite(LedPin_2, LOW);
 digitalWrite(LedPin_1, HIGH);
 tone(pinBuzz,261,250);//C4(mi
 digitalWrite(LedPin_1, LOW);
-digitalWrite(LedPin_2, HIGH);ddle)     
+digitalWrite(LedPin_2, HIGH);   
 delay(250);
 digitalWrite(LedPin_2, LOW);
 digitalWrite(LedPin_1, HIGH);
@@ -2298,7 +2298,7 @@ digitalWrite(LedPin_2, LOW);
 digitalWrite(LedPin_1, HIGH);
 tone(pinBuzz,261,125);//C4(mi
 digitalWrite(LedPin_1, LOW);
-digitalWrite(LedPin_2, HIGH);ddle)     
+digitalWrite(LedPin_2, HIGH);   
 delay(125);
 digitalWrite(LedPin_2, LOW);
 digitalWrite(LedPin_1, HIGH);
@@ -2352,7 +2352,7 @@ digitalWrite(LedPin_2, LOW);
 digitalWrite(LedPin_1, HIGH);
 tone(pinBuzz,261,125);//C4(mi
 digitalWrite(LedPin_1, LOW);
-digitalWrite(LedPin_2, HIGH);ddle)     
+digitalWrite(LedPin_2, HIGH);   
 delay(250);
 digitalWrite(LedPin_2, LOW);
 digitalWrite(LedPin_1, HIGH);
@@ -2382,7 +2382,7 @@ digitalWrite(LedPin_2, LOW);
 digitalWrite(LedPin_1, HIGH);
 tone(pinBuzz,261,125);//C4(mi
 digitalWrite(LedPin_1, LOW);
-digitalWrite(LedPin_2, HIGH);ddle)     
+digitalWrite(LedPin_2, HIGH);   
 delay(125);
 digitalWrite(LedPin_2, LOW);
 digitalWrite(LedPin_1, HIGH);
@@ -2412,7 +2412,7 @@ digitalWrite(LedPin_2, LOW);
 digitalWrite(LedPin_1, HIGH);
 tone(pinBuzz,261,125);//C4(mi
 digitalWrite(LedPin_1, LOW);
-digitalWrite(LedPin_2, HIGH);ddle)     
+digitalWrite(LedPin_2, HIGH);   
 delay(250);
 digitalWrite(LedPin_2, LOW);
 digitalWrite(LedPin_1, HIGH);
@@ -2442,7 +2442,7 @@ digitalWrite(LedPin_2, LOW);
 digitalWrite(LedPin_1, HIGH);
 tone(pinBuzz,261,125);//C4(mi
 digitalWrite(LedPin_1, LOW);
-digitalWrite(LedPin_2, HIGH);ddle)     
+digitalWrite(LedPin_2, HIGH);   
 delay(125);
 digitalWrite(LedPin_2, LOW);
 
@@ -2511,14 +2511,50 @@ digitalWrite(LedPin_2, LOW);
 digitalWrite(LedPin_1, HIGH);
 tone(pinBuzz,261,250);//C4(mi
 digitalWrite(LedPin_1, LOW);
-digitalWrite(LedPin_2, HIGH);ddle)     
+digitalWrite(LedPin_2, HIGH);   
 delay(250);
 digitalWrite(LedPin_2, LOW);
 digitalWrite(LedPin_1, HIGH);
 tone(pinBuzz,261,250);//C4(mi
 digitalWrite(LedPin_1, LOW);
-digitalWrite(LedPin_2, HIGH);ddle)     
+digitalWrite(LedPin_2, HIGH);   
 delay(250);
+digitalWrite(LedPin_2, LOW);
+digitalWrite(LedPin_1, HIGH);
+tone(pinBuzz,130,125);//C3
+digitalWrite(LedPin_1, LOW);
+digitalWrite(LedPin_2, HIGH);
+delay(125);
+digitalWrite(LedPin_2, LOW);
+digitalWrite(LedPin_1, HIGH);
+tone(pinBuzz,261,250);//C4(mi
+digitalWrite(LedPin_1, LOW);
+digitalWrite(LedPin_2, HIGH);   
+delay(250);
+digitalWrite(LedPin_2, LOW);
+digitalWrite(LedPin_1, HIGH);
+tone(pinBuzz,261,250);//C4(mi
+digitalWrite(LedPin_1, LOW);
+digitalWrite(LedPin_2, HIGH);   
+delay(250);
+digitalWrite(LedPin_2, LOW);
+digitalWrite(LedPin_1, HIGH);
+tone(pinBuzz,261,250);//C4(mi
+digitalWrite(LedPin_1, LOW);
+digitalWrite(LedPin_2, HIGH);   
+delay(250);
+digitalWrite(LedPin_2, LOW);
+digitalWrite(LedPin_1, HIGH);
+tone(pinBuzz,130,125);//C3
+digitalWrite(LedPin_1, LOW);
+digitalWrite(LedPin_2, HIGH);
+delay(125);
+digitalWrite(LedPin_2, LOW);
+digitalWrite(LedPin_1, HIGH);
+tone(pinBuzz,130,125);//C3
+digitalWrite(LedPin_1, LOW);
+digitalWrite(LedPin_2, HIGH);
+delay(125);
 digitalWrite(LedPin_2, LOW);
 digitalWrite(LedPin_1, HIGH);
 tone(pinBuzz,130,125);//C3
@@ -2529,43 +2565,7 @@ digitalWrite(LedPin_2, LOW);
 digitalWrite(LedPin_1, HIGH);
 tone(pinBuzz,261,250);//C4(mi
 digitalWrite(LedPin_1, LOW);
-digitalWrite(LedPin_2, HIGH);ddle)     
-delay(250);
-digitalWrite(LedPin_2, LOW);
-digitalWrite(LedPin_1, HIGH);
-tone(pinBuzz,261,250);//C4(mi
-digitalWrite(LedPin_1, LOW);
-digitalWrite(LedPin_2, HIGH);ddle)     
-delay(250);
-digitalWrite(LedPin_2, LOW);
-digitalWrite(LedPin_1, HIGH);
-tone(pinBuzz,261,250);//C4(mi
-digitalWrite(LedPin_1, LOW);
-digitalWrite(LedPin_2, HIGH);ddle)     
-delay(250);
-digitalWrite(LedPin_2, LOW);
-digitalWrite(LedPin_1, HIGH);
-tone(pinBuzz,130,125);//C3
-digitalWrite(LedPin_1, LOW);
-digitalWrite(LedPin_2, HIGH);
-delay(125);
-digitalWrite(LedPin_2, LOW);
-digitalWrite(LedPin_1, HIGH);
-tone(pinBuzz,130,125);//C3
-digitalWrite(LedPin_1, LOW);
-digitalWrite(LedPin_2, HIGH);
-delay(125);
-digitalWrite(LedPin_2, LOW);
-digitalWrite(LedPin_1, HIGH);
-tone(pinBuzz,130,125);//C3
-digitalWrite(LedPin_1, LOW);
-digitalWrite(LedPin_2, HIGH);
-delay(125);
-digitalWrite(LedPin_2, LOW);
-digitalWrite(LedPin_1, HIGH);
-tone(pinBuzz,261,250);//C4(mi
-digitalWrite(LedPin_1, LOW);
-digitalWrite(LedPin_2, HIGH);ddle)     
+digitalWrite(LedPin_2, HIGH);   
 delay(250);
 digitalWrite(LedPin_2, LOW);
 digitalWrite(LedPin_1, HIGH);
@@ -2631,13 +2631,13 @@ digitalWrite(LedPin_2, LOW);
 digitalWrite(LedPin_1, HIGH);
 tone(pinBuzz,261,250);//C4(mi
 digitalWrite(LedPin_1, LOW);
-digitalWrite(LedPin_2, HIGH);ddle)     
+digitalWrite(LedPin_2, HIGH);   
 delay(250);
 digitalWrite(LedPin_2, LOW);
 digitalWrite(LedPin_1, HIGH);
 tone(pinBuzz,261,250);//C4(mi
 digitalWrite(LedPin_1, LOW);
-digitalWrite(LedPin_2, HIGH);ddle)     
+digitalWrite(LedPin_2, HIGH);   
 delay(250);
 digitalWrite(LedPin_2, LOW);
 digitalWrite(LedPin_1, HIGH);
@@ -2649,7 +2649,7 @@ digitalWrite(LedPin_2, LOW);
 digitalWrite(LedPin_1, HIGH);
 tone(pinBuzz,261,250);//C4(mi
 digitalWrite(LedPin_1, LOW);
-digitalWrite(LedPin_2, HIGH);ddle)     
+digitalWrite(LedPin_2, HIGH);   
 delay(250);
 digitalWrite(LedPin_2, LOW);
 digitalWrite(LedPin_1, HIGH);
@@ -2751,14 +2751,50 @@ digitalWrite(LedPin_2, LOW);
 digitalWrite(LedPin_1, HIGH);
 tone(pinBuzz,261,250);//C4(mi
 digitalWrite(LedPin_1, LOW);
-digitalWrite(LedPin_2, HIGH);ddle)     
+digitalWrite(LedPin_2, HIGH);   
 delay(250);
 digitalWrite(LedPin_2, LOW);
 digitalWrite(LedPin_1, HIGH);
 tone(pinBuzz,261,250);//C4(mi
 digitalWrite(LedPin_1, LOW);
-digitalWrite(LedPin_2, HIGH);ddle)     
+digitalWrite(LedPin_2, HIGH);   
 delay(250);
+digitalWrite(LedPin_2, LOW);
+digitalWrite(LedPin_1, HIGH);
+tone(pinBuzz,130,125);//C3
+digitalWrite(LedPin_1, LOW);
+digitalWrite(LedPin_2, HIGH);
+delay(125);
+digitalWrite(LedPin_2, LOW);
+digitalWrite(LedPin_1, HIGH);
+tone(pinBuzz,261,250);//C4(mi
+digitalWrite(LedPin_1, LOW);
+digitalWrite(LedPin_2, HIGH);   
+delay(250);
+digitalWrite(LedPin_2, LOW);
+digitalWrite(LedPin_1, HIGH);
+tone(pinBuzz,261,250);//C4(mi
+digitalWrite(LedPin_1, LOW);
+digitalWrite(LedPin_2, HIGH);   
+delay(250);
+digitalWrite(LedPin_2, LOW);
+digitalWrite(LedPin_1, HIGH);
+tone(pinBuzz,261,250);//C4(mi
+digitalWrite(LedPin_1, LOW);
+digitalWrite(LedPin_2, HIGH);   
+delay(250);
+digitalWrite(LedPin_2, LOW);
+digitalWrite(LedPin_1, HIGH);
+tone(pinBuzz,130,125);//C3
+digitalWrite(LedPin_1, LOW);
+digitalWrite(LedPin_2, HIGH);
+delay(125);
+digitalWrite(LedPin_2, LOW);
+digitalWrite(LedPin_1, HIGH);
+tone(pinBuzz,130,125);//C3
+digitalWrite(LedPin_1, LOW);
+digitalWrite(LedPin_2, HIGH);
+delay(125);
 digitalWrite(LedPin_2, LOW);
 digitalWrite(LedPin_1, HIGH);
 tone(pinBuzz,130,125);//C3
@@ -2769,43 +2805,7 @@ digitalWrite(LedPin_2, LOW);
 digitalWrite(LedPin_1, HIGH);
 tone(pinBuzz,261,250);//C4(mi
 digitalWrite(LedPin_1, LOW);
-digitalWrite(LedPin_2, HIGH);ddle)     
-delay(250);
-digitalWrite(LedPin_2, LOW);
-digitalWrite(LedPin_1, HIGH);
-tone(pinBuzz,261,250);//C4(mi
-digitalWrite(LedPin_1, LOW);
-digitalWrite(LedPin_2, HIGH);ddle)     
-delay(250);
-digitalWrite(LedPin_2, LOW);
-digitalWrite(LedPin_1, HIGH);
-tone(pinBuzz,261,250);//C4(mi
-digitalWrite(LedPin_1, LOW);
-digitalWrite(LedPin_2, HIGH);ddle)     
-delay(250);
-digitalWrite(LedPin_2, LOW);
-digitalWrite(LedPin_1, HIGH);
-tone(pinBuzz,130,125);//C3
-digitalWrite(LedPin_1, LOW);
-digitalWrite(LedPin_2, HIGH);
-delay(125);
-digitalWrite(LedPin_2, LOW);
-digitalWrite(LedPin_1, HIGH);
-tone(pinBuzz,130,125);//C3
-digitalWrite(LedPin_1, LOW);
-digitalWrite(LedPin_2, HIGH);
-delay(125);
-digitalWrite(LedPin_2, LOW);
-digitalWrite(LedPin_1, HIGH);
-tone(pinBuzz,130,125);//C3
-digitalWrite(LedPin_1, LOW);
-digitalWrite(LedPin_2, HIGH);
-delay(125);
-digitalWrite(LedPin_2, LOW);
-digitalWrite(LedPin_1, HIGH);
-tone(pinBuzz,261,250);//C4(mi
-digitalWrite(LedPin_1, LOW);
-digitalWrite(LedPin_2, HIGH);ddle)     
+digitalWrite(LedPin_2, HIGH);   
 delay(250);
 digitalWrite(LedPin_2, LOW);
 digitalWrite(LedPin_1, HIGH);
@@ -2991,14 +2991,50 @@ digitalWrite(LedPin_2, LOW);
 digitalWrite(LedPin_1, HIGH);
 tone(pinBuzz,261,250);//C4(mi
 digitalWrite(LedPin_1, LOW);
-digitalWrite(LedPin_2, HIGH);ddle)     
+digitalWrite(LedPin_2, HIGH);   
 delay(250);
 digitalWrite(LedPin_2, LOW);
 digitalWrite(LedPin_1, HIGH);
 tone(pinBuzz,261,250);//C4(mi
 digitalWrite(LedPin_1, LOW);
-digitalWrite(LedPin_2, HIGH);ddle)     
+digitalWrite(LedPin_2, HIGH);   
 delay(250);
+digitalWrite(LedPin_2, LOW);
+digitalWrite(LedPin_1, HIGH);
+tone(pinBuzz,130,125);//C3
+digitalWrite(LedPin_1, LOW);
+digitalWrite(LedPin_2, HIGH);
+delay(125);
+digitalWrite(LedPin_2, LOW);
+digitalWrite(LedPin_1, HIGH);
+tone(pinBuzz,261,250);//C4(mi
+digitalWrite(LedPin_1, LOW);
+digitalWrite(LedPin_2, HIGH);   
+delay(250);
+digitalWrite(LedPin_2, LOW);
+digitalWrite(LedPin_1, HIGH);
+tone(pinBuzz,261,250);//C4(mi
+digitalWrite(LedPin_1, LOW);
+digitalWrite(LedPin_2, HIGH);   
+delay(250);
+digitalWrite(LedPin_2, LOW);
+digitalWrite(LedPin_1, HIGH);
+tone(pinBuzz,261,250);//C4(mi
+digitalWrite(LedPin_1, LOW);
+digitalWrite(LedPin_2, HIGH);   
+delay(250);
+digitalWrite(LedPin_2, LOW);
+digitalWrite(LedPin_1, HIGH);
+tone(pinBuzz,130,125);//C3
+digitalWrite(LedPin_1, LOW);
+digitalWrite(LedPin_2, HIGH);
+delay(125);
+digitalWrite(LedPin_2, LOW);
+digitalWrite(LedPin_1, HIGH);
+tone(pinBuzz,130,125);//C3
+digitalWrite(LedPin_1, LOW);
+digitalWrite(LedPin_2, HIGH);
+delay(125);
 digitalWrite(LedPin_2, LOW);
 digitalWrite(LedPin_1, HIGH);
 tone(pinBuzz,130,125);//C3
@@ -3009,43 +3045,7 @@ digitalWrite(LedPin_2, LOW);
 digitalWrite(LedPin_1, HIGH);
 tone(pinBuzz,261,250);//C4(mi
 digitalWrite(LedPin_1, LOW);
-digitalWrite(LedPin_2, HIGH);ddle)     
-delay(250);
-digitalWrite(LedPin_2, LOW);
-digitalWrite(LedPin_1, HIGH);
-tone(pinBuzz,261,250);//C4(mi
-digitalWrite(LedPin_1, LOW);
-digitalWrite(LedPin_2, HIGH);ddle)     
-delay(250);
-digitalWrite(LedPin_2, LOW);
-digitalWrite(LedPin_1, HIGH);
-tone(pinBuzz,261,250);//C4(mi
-digitalWrite(LedPin_1, LOW);
-digitalWrite(LedPin_2, HIGH);ddle)     
-delay(250);
-digitalWrite(LedPin_2, LOW);
-digitalWrite(LedPin_1, HIGH);
-tone(pinBuzz,130,125);//C3
-digitalWrite(LedPin_1, LOW);
-digitalWrite(LedPin_2, HIGH);
-delay(125);
-digitalWrite(LedPin_2, LOW);
-digitalWrite(LedPin_1, HIGH);
-tone(pinBuzz,130,125);//C3
-digitalWrite(LedPin_1, LOW);
-digitalWrite(LedPin_2, HIGH);
-delay(125);
-digitalWrite(LedPin_2, LOW);
-digitalWrite(LedPin_1, HIGH);
-tone(pinBuzz,130,125);//C3
-digitalWrite(LedPin_1, LOW);
-digitalWrite(LedPin_2, HIGH);
-delay(125);
-digitalWrite(LedPin_2, LOW);
-digitalWrite(LedPin_1, HIGH);
-tone(pinBuzz,261,250);//C4(mi
-digitalWrite(LedPin_1, LOW);
-digitalWrite(LedPin_2, HIGH);ddle)     
+digitalWrite(LedPin_2, HIGH);   
 delay(250);
 digitalWrite(LedPin_2, LOW);
 digitalWrite(LedPin_1, HIGH);
@@ -3111,13 +3111,13 @@ digitalWrite(LedPin_2, LOW);
 digitalWrite(LedPin_1, HIGH);
 tone(pinBuzz,261,250);//C4(mi
 digitalWrite(LedPin_1, LOW);
-digitalWrite(LedPin_2, HIGH);ddle)     
+digitalWrite(LedPin_2, HIGH);   
 delay(250);
 digitalWrite(LedPin_2, LOW);
 digitalWrite(LedPin_1, HIGH);
 tone(pinBuzz,261,250);//C4(mi
 digitalWrite(LedPin_1, LOW);
-digitalWrite(LedPin_2, HIGH);ddle)     
+digitalWrite(LedPin_2, HIGH);   
 delay(250);
 digitalWrite(LedPin_2, LOW);
 digitalWrite(LedPin_1, HIGH);
@@ -3129,7 +3129,7 @@ digitalWrite(LedPin_2, LOW);
 digitalWrite(LedPin_1, HIGH);
 tone(pinBuzz,261,250);//C4(mi
 digitalWrite(LedPin_1, LOW);
-digitalWrite(LedPin_2, HIGH);ddle)     
+digitalWrite(LedPin_2, HIGH);   
 delay(250);
 digitalWrite(LedPin_2, LOW);
 digitalWrite(LedPin_1, HIGH);
@@ -3231,14 +3231,50 @@ digitalWrite(LedPin_2, LOW);
 digitalWrite(LedPin_1, HIGH);
 tone(pinBuzz,261,250);//C4(mi
 digitalWrite(LedPin_1, LOW);
-digitalWrite(LedPin_2, HIGH);ddle)     
+digitalWrite(LedPin_2, HIGH);   
 delay(250);
 digitalWrite(LedPin_2, LOW);
 digitalWrite(LedPin_1, HIGH);
 tone(pinBuzz,261,250);//C4(mi
 digitalWrite(LedPin_1, LOW);
-digitalWrite(LedPin_2, HIGH);ddle)     
+digitalWrite(LedPin_2, HIGH);   
 delay(250);
+digitalWrite(LedPin_2, LOW);
+digitalWrite(LedPin_1, HIGH);
+tone(pinBuzz,130,125);//C3
+digitalWrite(LedPin_1, LOW);
+digitalWrite(LedPin_2, HIGH);
+delay(125);
+digitalWrite(LedPin_2, LOW);
+digitalWrite(LedPin_1, HIGH);
+tone(pinBuzz,261,250);//C4(mi
+digitalWrite(LedPin_1, LOW);
+digitalWrite(LedPin_2, HIGH);   
+delay(250);
+digitalWrite(LedPin_2, LOW);
+digitalWrite(LedPin_1, HIGH);
+tone(pinBuzz,261,250);//C4(mi
+digitalWrite(LedPin_1, LOW);
+digitalWrite(LedPin_2, HIGH);   
+delay(250);
+digitalWrite(LedPin_2, LOW);
+digitalWrite(LedPin_1, HIGH);
+tone(pinBuzz,261,250);//C4(mi
+digitalWrite(LedPin_1, LOW);
+digitalWrite(LedPin_2, HIGH);   
+delay(250);
+digitalWrite(LedPin_2, LOW);
+digitalWrite(LedPin_1, HIGH);
+tone(pinBuzz,130,125);//C3
+digitalWrite(LedPin_1, LOW);
+digitalWrite(LedPin_2, HIGH);
+delay(125);
+digitalWrite(LedPin_2, LOW);
+digitalWrite(LedPin_1, HIGH);
+tone(pinBuzz,130,125);//C3
+digitalWrite(LedPin_1, LOW);
+digitalWrite(LedPin_2, HIGH);
+delay(125);
 digitalWrite(LedPin_2, LOW);
 digitalWrite(LedPin_1, HIGH);
 tone(pinBuzz,130,125);//C3
@@ -3249,43 +3285,7 @@ digitalWrite(LedPin_2, LOW);
 digitalWrite(LedPin_1, HIGH);
 tone(pinBuzz,261,250);//C4(mi
 digitalWrite(LedPin_1, LOW);
-digitalWrite(LedPin_2, HIGH);ddle)     
-delay(250);
-digitalWrite(LedPin_2, LOW);
-digitalWrite(LedPin_1, HIGH);
-tone(pinBuzz,261,250);//C4(mi
-digitalWrite(LedPin_1, LOW);
-digitalWrite(LedPin_2, HIGH);ddle)     
-delay(250);
-digitalWrite(LedPin_2, LOW);
-digitalWrite(LedPin_1, HIGH);
-tone(pinBuzz,261,250);//C4(mi
-digitalWrite(LedPin_1, LOW);
-digitalWrite(LedPin_2, HIGH);ddle)     
-delay(250);
-digitalWrite(LedPin_2, LOW);
-digitalWrite(LedPin_1, HIGH);
-tone(pinBuzz,130,125);//C3
-digitalWrite(LedPin_1, LOW);
 digitalWrite(LedPin_2, HIGH);
-delay(125);
-digitalWrite(LedPin_2, LOW);
-digitalWrite(LedPin_1, HIGH);
-tone(pinBuzz,130,125);//C3
-digitalWrite(LedPin_1, LOW);
-digitalWrite(LedPin_2, HIGH);
-delay(125);
-digitalWrite(LedPin_2, LOW);
-digitalWrite(LedPin_1, HIGH);
-tone(pinBuzz,130,125);//C3
-digitalWrite(LedPin_1, LOW);
-digitalWrite(LedPin_2, HIGH);
-delay(125);
-digitalWrite(LedPin_2, LOW);
-digitalWrite(LedPin_1, HIGH);
-tone(pinBuzz,261,250);//C4(mi
-digitalWrite(LedPin_1, LOW);
-digitalWrite(LedPin_2, HIGH);ddle)
 delay(250);
 digitalWrite(LedPin_2, LOW);
 digitalWrite(LedPin_1, HIGH);
@@ -3486,25 +3486,25 @@ digitalWrite(LedPin_2, LOW);
 digitalWrite(LedPin_1, HIGH);
 tone(pinBuzz,261,125);//C4(mi
 digitalWrite(LedPin_1, LOW);
-digitalWrite(LedPin_2, HIGH);ddle)     
+digitalWrite(LedPin_2, HIGH);   
 delay(62);
 digitalWrite(LedPin_2, LOW);
 digitalWrite(LedPin_1, HIGH);
 tone(pinBuzz,261,125);//C4(mi
 digitalWrite(LedPin_1, LOW);
-digitalWrite(LedPin_2, HIGH);ddle)     
+digitalWrite(LedPin_2, HIGH);   
 delay(62);
 digitalWrite(LedPin_2, LOW);
 digitalWrite(LedPin_1, HIGH);
 tone(pinBuzz,261,125);//C4(mi
 digitalWrite(LedPin_1, LOW);
-digitalWrite(LedPin_2, HIGH);ddle)     
+digitalWrite(LedPin_2, HIGH);   
 delay(62);
 digitalWrite(LedPin_2, LOW);
 digitalWrite(LedPin_1, HIGH);
 tone(pinBuzz,261,125);//C4(mi
 digitalWrite(LedPin_1, LOW);
-digitalWrite(LedPin_2, HIGH);ddle)     
+digitalWrite(LedPin_2, HIGH);   
 delay(62);
 digitalWrite(LedPin_2, LOW);
 digitalWrite(LedPin_1, HIGH);
@@ -3750,25 +3750,25 @@ digitalWrite(LedPin_2, LOW);
 digitalWrite(LedPin_1, HIGH);
 tone(pinBuzz,261,125);//C4(mi
 digitalWrite(LedPin_1, LOW);
-digitalWrite(LedPin_2, HIGH);ddle)     
+digitalWrite(LedPin_2, HIGH);   
 delay(62);
 digitalWrite(LedPin_2, LOW);
 digitalWrite(LedPin_1, HIGH);
 tone(pinBuzz,261,125);//C4(mi
 digitalWrite(LedPin_1, LOW);
-digitalWrite(LedPin_2, HIGH);ddle)     
+digitalWrite(LedPin_2, HIGH);   
 delay(62);
 digitalWrite(LedPin_2, LOW);
 digitalWrite(LedPin_1, HIGH);
 tone(pinBuzz,261,125);//C4(mi
 digitalWrite(LedPin_1, LOW);
-digitalWrite(LedPin_2, HIGH);ddle)     
+digitalWrite(LedPin_2, HIGH);   
 delay(62);
 digitalWrite(LedPin_2, LOW);
 digitalWrite(LedPin_1, HIGH);
 tone(pinBuzz,261,125);//C4(mi
 digitalWrite(LedPin_1, LOW);
-digitalWrite(LedPin_2, HIGH);ddle)     
+digitalWrite(LedPin_2, HIGH);   
 delay(62);
 digitalWrite(LedPin_2, LOW);
 digitalWrite(LedPin_1, HIGH);
@@ -3817,6 +3817,7 @@ digitalWrite(LedPin_1, HIGH);
 tone(pinBuzz,392,125);//G4
 digitalWrite(LedPin_1, LOW);
 digitalWrite(LedPin_2, HIGH);
+delay(125);
+digitalWrite(LedPin_2, LOW);
 delay(4125);
-digitalWrite(LedPin_2, LOW);
 }
