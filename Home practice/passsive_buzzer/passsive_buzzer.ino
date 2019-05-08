@@ -121,7 +121,6 @@ void playMegalovania() {
     int noteDuration = megalovania_noteDurations[thisNote];
     digitalWrite(LedPin_Mega, HIGH);
     tone(buzzerPin, megalovania[thisNote], noteDuration);
-    digitalWrite(LedPin_Mega, LOW);
 
     // to distinguish the notes, set a minimum time between them.
     int pauseBetweenNotes = megalovaniaDelays[thisNote];
@@ -130,6 +129,7 @@ void playMegalovania() {
     digitalWrite(LedPin_state, LOW);
     // stop the tone playing:
     //noTone(buzzerPin);
+    digitalWrite(LedPin_Mega, LOW);
   }
 }
 
@@ -144,7 +144,6 @@ void playSoviet() {
     digitalWrite(LedPin_Soviet[thisNote % 3], HIGH);
     //delay(noteDuration);
     tone(buzzerPin, soviet[thisNote], noteDuration);
-    digitalWrite(LedPin_Soviet[thisNote % 3], LOW);
 
     // to distinguish the notes, set a minimum time between them.
     int pauseBetweenNotes = sovietDelays[thisNote];
@@ -153,6 +152,7 @@ void playSoviet() {
     digitalWrite(LedPin_state, LOW);
     // stop the tone playing:
     //noTone(buzzerPin);
+    digitalWrite(LedPin_Soviet[thisNote % 3], LOW);
   }
 }
 
