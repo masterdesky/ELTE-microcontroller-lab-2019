@@ -2136,7 +2136,7 @@ digitalWrite(LedPin_2, LOW);
 digitalWrite(LedPin_1, HIGH);
 tone(pinBuzz,261,83);//C4(mid
 digitalWrite(LedPin_1, LOW);
-digitalWrite(LedPin_2, HIGH);dle)     
+digitalWrite(LedPin_2, HIGH);   
 delay(83);
 digitalWrite(LedPin_2, LOW);
 digitalWrite(LedPin_1, HIGH);

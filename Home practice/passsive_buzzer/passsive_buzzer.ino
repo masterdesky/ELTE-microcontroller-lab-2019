@@ -1,32 +1,15 @@
-LedPin_1 = 13;
-LedPin_2 = 4;
+int buzzerPin = 9;
+int LedPin_state = 13;
+int LedPin_Mega = 7;
+int LedPin_Soviet[] = {
+  3, 4, 5
+};
+String readString;
 
 #include "pitches.h"
 
-// notes in the melody:
-
-//D4 //D4 //D5 //A4 //Ab4 //G4 //F4 //D4 //F4 //G4 //C4 //C4 //C4 //C4 //D5
-
-////////
-
-//A4 //Ab4 //G4 //F4 //D4 //F4 //G4 //B3 //B3 //D5 //A4 //Ab4 //G4 //F4 //D4
-
-////////
-
-//F4 //G4 //Bb3 //Bb3 //Bb3 //Bb3 //D5 //A4 //Ab4 //G4 //F4 //D4 //F4 //G4 //D4
-
-////////
-
-//D4 //D5 //A4 //Ab4 //G4 //F4 //D4 //F4 //G4 //C4 //C4 //C4 //C4 //D5 //A4
-
-////////
-
-//Ab4 //G4 //F4 //D4 //F4 //G4 //B3 //B3 //D5 //A4 //Ab4 //G4 //F4 //D4 //F4
-
-////////
-
-//G4 //Bb3 //Bb3 //Bb3 //Bb3 //D5 //A4 //Ab4 //G4 //F4 //D4 //F4 //G4
-int melody[] = {
+// MEGALOVANIA
+int megalovania[] = {
   NOTE_D4, NOTE_D4, NOTE_D5, NOTE_A4, NOTE_GS4, NOTE_G4, NOTE_F4, NOTE_D4, NOTE_F4, NOTE_G4, NOTE_C4, NOTE_C4, NOTE_C4, NOTE_C4, NOTE_D5,
   NOTE_A4, NOTE_GS4, NOTE_G4, NOTE_F4, NOTE_D4, NOTE_F4, NOTE_G4, NOTE_B3, NOTE_B3, NOTE_D5, NOTE_A4, NOTE_GS4, NOTE_G4, NOTE_F4, NOTE_D4,
   NOTE_F4, NOTE_G4, NOTE_AS3, NOTE_AS3, NOTE_AS3, NOTE_AS3, NOTE_D5, NOTE_A4, NOTE_GS4, NOTE_G4, NOTE_F4, NOTE_D4, NOTE_F4, NOTE_G4, NOTE_D4,
@@ -35,8 +18,8 @@ int melody[] = {
   NOTE_G4, NOTE_AS3, NOTE_AS3, NOTE_AS3, NOTE_AS3, NOTE_D5, NOTE_A4, NOTE_GS4, NOTE_G4, NOTE_F4, NOTE_D4, NOTE_F4, NOTE_G4
 };
 
-// note durations: 4 = quarter note, 8 = eighth note, etc.:
-int noteDurations[] = {
+// note durations and delays in milliseconds
+int megalovania_noteDurations[] = {
   125, 125, 250, 250, 125, 250, 250, 125, 125, 125, 125, 125, 125, 125, 250,
   375, 125, 250, 250, 125, 125, 125, 125, 125, 250, 375, 125, 250, 250, 125,
   125, 125, 62, 62, 62, 62, 250, 375, 125, 250, 250, 125, 125, 125, 125,
@@ -45,9 +28,7 @@ int noteDurations[] = {
   125, 62, 62, 62, 62, 250, 375, 125, 250, 250, 125, 125, 125
 };
 
-
-
-int delays[] = {
+int megalovaniaDelays[] = {
   125, 125, 250, 375, 250, 250, 250, 125, 125, 125, 62, 62, 62, 62, 250,
   375, 250, 250, 250, 125, 125, 125, 125, 125, 250, 375, 250, 250, 250, 125,
   125, 125, 62, 62, 62, 62, 250, 375, 250, 250, 250, 125, 125, 125, 125,
@@ -56,30 +37,142 @@ int delays[] = {
   125, 125, 62, 62, 62, 62, 250, 375, 250, 250, 250, 125, 125
 };
 
+// RUSSIAN ANTHEM
+// peter.vella@gmail.com
+int soviet[] = {
+  NOTE_DS4, NOTE_AS3,
+  NOTE_DS4, NOTE_AS3, NOTE_C4, NOTE_D4, NOTE_G3, NOTE_G3,
+  NOTE_C4, NOTE_AS3, NOTE_GS3, NOTE_AS3, NOTE_DS3, NOTE_DS3,
+  NOTE_F3, NOTE_F3, NOTE_G3, NOTE_GS3, NOTE_GS3, NOTE_AS3,
+  NOTE_C4, NOTE_D4, NOTE_DS4, NOTE_F4, NOTE_AS3,
+  NOTE_G4, NOTE_F4, NOTE_DS4, NOTE_F4, NOTE_D4, NOTE_AS3,
+  NOTE_DS4, NOTE_D4, NOTE_C4, NOTE_D4, NOTE_G3, NOTE_G3,
+  NOTE_C4, NOTE_AS3, NOTE_GS3, NOTE_AS3, NOTE_DS3,
+  NOTE_DS4, NOTE_D4, NOTE_C4, NOTE_AS3, NOTE_AS3,
+  NOTE_G4, NOTE_F4, NOTE_DS4, NOTE_D4, NOTE_DS4,
+  NOTE_F4, NOTE_AS3, NOTE_AS3, NOTE_AS3, NOTE_D4, NOTE_F4,
+  NOTE_DS4, NOTE_DS4, NOTE_D4, NOTE_C4, NOTE_AS3, NOTE_C4,
+  NOTE_D4, NOTE_G3, NOTE_G3, NOTE_G3, NOTE_GS3, NOTE_AS3,
+  NOTE_DS4, NOTE_C4, NOTE_D4, NOTE_DS4, NOTE_C4, NOTE_D4,
+  NOTE_DS4, NOTE_C4, NOTE_DS4, NOTE_GS4,
+  NOTE_GS4, NOTE_G4, NOTE_F4, NOTE_DS4, NOTE_F4,
+  NOTE_G4, NOTE_DS4, NOTE_DS4
+};
+
+// note durations and delays in milliseconds
+int soviet_noteDurations[] = {
+  3500, 583,
+  1167, 875, 292, 1167, 583, 583,
+  1167, 875, 292, 1167, 583, 583,
+  1167, 583, 583, 1167, 583, 583,
+  1167, 583, 583, 1750, 583,
+  1167, 875, 292, 1167, 583, 583,
+  1167, 875, 292, 1167, 583, 583,
+  1167, 875, 292, 1167, 1167,
+  1167, 875, 292, 1750, 292,
+  2334, 583, 583, 583, 583,
+  1750, 583, 583, 583, 583, 583,
+  1750, 583, 583, 583, 583, 583,
+  1750, 583, 583, 583, 583, 583,
+  1167, 875, 583, 1167, 875, 583,
+  1167, 583, 583, 2334,
+  2334, 583, 583, 583, 583,
+  1750, 583, 2334
+};
+
+int sovietDelays[] = {
+  1167, 292,
+  583, 437, 292, 583, 292, 292,
+  583, 437, 292, 583, 292, 292,
+  583, 292, 292, 583, 292, 292,
+  583, 292, 292, 875, 292,
+  583, 437, 292, 583, 292, 292,
+  583, 437, 292, 583, 292, 292,
+  583, 437, 292, 583, 583,
+  583, 437, 292, 875, 292,
+  1167, 292, 292, 292, 292,
+  875, 292, 292, 292, 292, 292,
+  875, 292, 292, 292, 292, 292,
+  875, 292, 292, 292, 292, 292,
+  583, 437, 292, 538, 437, 292,
+  583, 292, 292, 1167,
+  1167, 292, 292, 292, 292,
+  875, 292, 1167
+};
+
+// FINAL COUNTDOWN
+int final[] = {
+  NOTE_G4, NOTE_D4, NOTE_C4, NOTE_D4, NOTE_G4,
+  NOTE_DS4
+};
 
 void setup() {
-  // Nothing....
+  Serial.begin(9600);
+  Serial.println("Serial switch test 0012"); // so I can keep track
 }
 
-void loop() {
+void playMegalovania() {
   // iterate over the notes of the melody:
   for (int thisNote = 0; thisNote < 87; thisNote++) {
 
     // to calculate the note duration, take one second
     // divided by the note type.
     //e.g. quarter note = 1000 / 4, eighth note = 1000/8, etc.
-    int noteDuration = noteDurations[thisNote];
-    digitalWrite(LedPin_1, HIGH);
-    tone(9, melody[thisNote], noteDuration);
+    int noteDuration = megalovania_noteDurations[thisNote];
+    digitalWrite(LedPin_Mega, HIGH);
+    tone(buzzerPin, megalovania[thisNote], noteDuration);
+    digitalWrite(LedPin_Mega, LOW);
 
     // to distinguish the notes, set a minimum time between them.
-    int pauseBetweenNotes = delays[thisNote];
-    digitalWrite(LedPin_1, LOW);
-    digitalWrite(LedPin_2, HIGH);
-    delay(paueBetweenNotes);
-    digitalWrite(LedPin_2, LOW);
+    int pauseBetweenNotes = megalovaniaDelays[thisNote];
+    digitalWrite(LedPin_state, HIGH);
+    delay(pauseBetweenNotes);
+    digitalWrite(LedPin_state, LOW);
     // stop the tone playing:
-    //noTone(9);
+    //noTone(buzzerPin);
   }
-  delay(4125);
+}
+
+void playSoviet() {
+  // iterate over the notes of the melody:
+  for (int thisNote = 0; thisNote < 88; thisNote++) {
+
+    // to calculate the note duration, take one second
+    // divided by the note type.
+    //e.g. quarter note = 1000 / 4, eighth note = 1000/8, etc.
+    int noteDuration = soviet_noteDurations[thisNote];
+    digitalWrite(LedPin_Soviet[thisNote % 3], HIGH);
+    //delay(noteDuration);
+    tone(buzzerPin, soviet[thisNote], noteDuration);
+    digitalWrite(LedPin_Soviet[thisNote % 3], LOW);
+
+    // to distinguish the notes, set a minimum time between them.
+    int pauseBetweenNotes = sovietDelays[thisNote];
+    digitalWrite(LedPin_state, HIGH);
+    delay(pauseBetweenNotes);
+    digitalWrite(LedPin_state, LOW);
+    // stop the tone playing:
+    //noTone(buzzerPin);
+  }
+}
+
+void loop() {
+  while (Serial.available()) {
+    delay(3);
+    char c = Serial.read();
+    readString += c;
+  }
+  readString.trim();
+  if (readString.length() > 0) {
+    if (readString == "megalovania") {
+      Serial.println("Playing megalovania....");
+      playMegalovania();
+    }
+    if (readString == "soviet")
+    {
+      Serial.println("Playing soviet anthem....");
+      playSoviet();
+    }
+    readString = "";
+  }
 }
