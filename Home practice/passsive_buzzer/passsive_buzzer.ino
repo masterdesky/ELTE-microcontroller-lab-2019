@@ -56,7 +56,11 @@ int soviet[] = {
   NOTE_DS4, NOTE_C4, NOTE_D4, NOTE_DS4, NOTE_C4, NOTE_D4,
   NOTE_DS4, NOTE_C4, NOTE_DS4, NOTE_GS4,
   NOTE_GS4, NOTE_G4, NOTE_F4, NOTE_DS4, NOTE_F4,
-  NOTE_G4, NOTE_DS4, NOTE_DS4
+  NOTE_G4, NOTE_DS4, NOTE_DS4,
+  NOTE_F4, NOTE_DS4, NOTE_D4, NOTE_C4, NOTE_D4,
+  NOTE_DS4, NOTE_C4, NOTE_C4,
+  NOTE_DS4, NOTE_D4, NOTE_C4, NOTE_AS3, NOTE_DS3, NOTE_DS3,
+  NOTE_AS3, NOTE_C4, NOTE_D4
 };
 
 // note durations and delays in milliseconds
@@ -77,7 +81,12 @@ int soviet_noteDurations[] = {
   1167, 875, 583, 1167, 875, 583,
   1167, 583, 583, 2334,
   2334, 583, 583, 583, 583,
-  1750, 583, 2334
+  1750, 583, 2334,
+  2334, 583, 583, 583, 583,
+  1750, 583, 2334,
+  1167, 583, 583, 1167, 875, 292,
+  2500, 1250, 1250,
+  5000
 };
 
 int sovietDelays[] = {
@@ -97,7 +106,12 @@ int sovietDelays[] = {
   583, 437, 292, 538, 437, 292,
   583, 292, 292, 1167,
   1167, 292, 292, 292, 292,
-  875, 292, 1167
+  875, 292, 1167,
+  1167, 292, 292, 292, 292,
+  875, 292, 1167,
+  583, 292, 292, 583, 437, 292,
+  1250, 625, 625,
+  2500
 };
 
 // FINAL COUNTDOWN
@@ -135,7 +149,7 @@ void playMegalovania() {
 
 void playSoviet() {
   // iterate over the notes of the melody:
-  for (int thisNote = 0; thisNote < 88; thisNote++) {
+  for (int thisNote = 0; thisNote < 106; thisNote++) {
 
     // to calculate the note duration, take one second
     // divided by the note type.
