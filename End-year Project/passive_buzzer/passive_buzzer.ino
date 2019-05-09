@@ -127,9 +127,16 @@ int final[] = {
   NOTE_AS4, NOTE_A4, NOTE_AS4, NOTE_C5, NOTE_AS4, NOTE_C5,
   NOTE_D5, NOTE_C5, NOTE_AS4, NOTE_A4, NOTE_G4, NOTE_DS5,
   NOTE_D5, NOTE_D5, NOTE_DS5, NOTE_D5, NOTE_C5,
-  NOTE_D5
+  NOTE_D5,
+  NOTE_G4, // 6 * 1/4 NOTE_G4
+  NOTE_G4, NOTE_F4,
+  NOTE_D4, NOTE_AS4, NOTE_A4, NOTE_F4,
+  NOTE_G4,
+  NOTE_G5, NOTE_G5, NOTE_A5, NOTE_AS5,  // 2 * 1/8 NOTE_A5
+  NOTE_A5, NOTE_G5,
+  NOTE_G5, NOTE_G5, NOTE_A5, NOTE_AS5,  // 2 * 1/8 NOTE_A5 + 2 * 1/8 NOTE_AS5
+  NOTE_G5 // 5 * 1/8 NOTE_G5
 };
-
 
 // note durations and delays in milliseconds
 int final_noteDurations[] = {
@@ -144,7 +151,14 @@ int final_noteDurations[] = {
   750, 125, 125, 750, 125, 125,
   250, 250, 250, 250, 500, 500,
   1500, 125, 125, 125, 125,
-  2000
+  2000,
+  3000,
+  500, 500,
+  500, 500, 500, 500,
+  2000,
+  250, 750, 125, 500, 250,
+  500, 500,
+  250, 750, 375, 500, 1250
 };
 
 int finalDelays[] = {
@@ -159,7 +173,14 @@ int finalDelays[] = {
   750, 125, 125, 750, 125, 125,
   250, 250, 250, 250, 500, 500,
   1500, 125, 125, 125, 125,
-  2000
+  2000,
+  3000,
+  500, 500,
+  500, 500, 500, 500,
+  2750,
+  250, 750, 375, 250,
+  500, 2250,
+  250, 750, 375, 500, 1750
 };
 
 void setup() {
