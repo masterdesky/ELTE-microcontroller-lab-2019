@@ -130,6 +130,7 @@ int final[] = {
   NOTE_D5
 };
 
+/*
 // note durations and delays in milliseconds
 int final_noteDurations[] = {
   500, 125, 125, 500, 500,
@@ -144,6 +145,21 @@ int final_noteDurations[] = {
   250, 250, 250, 250, 500, 500,
   1500, 125, 125, 125, 125,
   2000
+};*/
+
+int final_noteDurations[] = {
+  1000, 250, 250, 1000, 1000,
+  1000, 250, 250, 500, 500, 1000,
+  1000, 250, 250, 1000, 1000,
+  1000, 250, 250, 500, 500, 500, 500,
+  1000, 250, 250, 1000, 1000,
+  1000, 250, 250, 500, 500, 1000,
+  1000, 250, 250, 1000, 1000,
+  1000, 250, 250, 500, 500, 500, 500,
+  1500, 250, 250, 1500, 250, 250,
+  500, 500, 500, 500, 1000, 1000,
+  3000, 250, 250, 250, 250,
+  4000
 };
 
 int finalDelays[] = {
@@ -166,6 +182,7 @@ void setup() {
   Serial.println("Serial switch test 0015"); // so I can keep track
 }
 
+/*
 void playMegalovania() {
   // iterate over the notes of the melody:
   for (int thisNote = 0; thisNote < 87; thisNote++) {
@@ -186,7 +203,7 @@ void playMegalovania() {
     noTone(buzzerPin);
     digitalWrite(LedPin_Mega, LOW);
   }
-}
+}*/
 
 void playSoviet() {
   // iterate over the notes of the melody:
