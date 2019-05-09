@@ -1,6 +1,9 @@
-int buzzerPin = 9;
+int buzzerPin = 11;
 int LedPin_state = 13;
-int LedPin_Mega = 7;
+int LedPin_Mega = 8;
+int LedPin_Final[] = {
+  7, 8, 9
+};
 int LedPin_Soviet[] = {
   3, 4, 5
 };
@@ -188,7 +191,7 @@ void setup() {
   Serial.println("Serial switch test 0015"); // so I can keep track
 }
 
-/*
+
 void playMegalovania() {
   // iterate over the notes of the melody:
   for (int thisNote = 0; thisNote < 87; thisNote++) {
@@ -209,7 +212,7 @@ void playMegalovania() {
     noTone(buzzerPin);
     digitalWrite(LedPin_Mega, LOW);
   }
-}*/
+}
 
 void playSoviet() {
   // iterate over the notes of the melody:
@@ -236,13 +239,13 @@ void playSoviet() {
 
 void playFinal() {
   // iterate over the notes of the melody:
-  for (int thisNote = 0; thisNote < 64; thisNote++) {
+  for (int thisNote = 0; thisNote < 83; thisNote++) {
 
     // to calculate the note duration, take one second
     // divided by the note type.
     //e.g. quarter note = 1000 / 4, eighth note = 1000/8, etc.
     int noteDuration = final_noteDurations[thisNote];
-    digitalWrite(LedPin_Mega, HIGH);
+    digitalWrite(LedPin_Final[thisNote % 3], HIGH);
     tone(buzzerPin, final[thisNote], noteDuration);
 
     // to distinguish the notes, set a minimum time between them.
@@ -252,7 +255,7 @@ void playFinal() {
     digitalWrite(LedPin_state, LOW);
     // stop the tone playing:
     noTone(buzzerPin);
-    digitalWrite(LedPin_Mega, LOW);
+    digitalWrite(LedPin_Final[thisNote % 3], LOW);
   }
 }
 
@@ -264,10 +267,10 @@ void loop() {
   }
   readString.trim();
   if (readString.length() > 0) {
-    /*if (readString == "megalovania") {
+    if (readString == "megalovania") {
       Serial.println("Playing Megalovania....");
       playMegalovania();
-    }*/
+    }
     if (readString == "soviet")
     {
       Serial.println("Playing soviet anthem....");
