@@ -163,7 +163,7 @@ int finalDelays[] = {
 
 void setup() {
   Serial.begin(9600);
-  Serial.println("Serial switch test 0012"); // so I can keep track
+  Serial.println("Serial switch test 0015"); // so I can keep track
 }
 
 void playMegalovania() {
@@ -241,10 +241,10 @@ void loop() {
   }
   readString.trim();
   if (readString.length() > 0) {
-    if (readString == "megalovania") {
+    /*if (readString == "megalovania") {
       Serial.println("Playing Megalovania....");
       playMegalovania();
-    }
+    }*/
     if (readString == "soviet")
     {
       Serial.println("Playing soviet anthem....");
