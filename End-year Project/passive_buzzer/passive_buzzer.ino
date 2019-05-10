@@ -6,7 +6,7 @@ int LedPin_Final[] = {
   7, 8, 9
 };
 int LedPin_Soviet[] = {
-  3, 4, 5
+  2, 3, 4
 };
 int buttonState = 0;
 String readString;
@@ -222,7 +222,7 @@ int finalDelays[] = {
 void setup() {
   pinMode(buttonPin, INPUT);
   Serial.begin(9600);
-  Serial.println("Serial switch test 0015"); // so I can keep track
+  Serial.println("Musicbox 1949-1999-2019"); // so I can keep track
 }
 
 /*
@@ -291,7 +291,8 @@ void playFinal() {
     // divided by the note type.
     //e.g. quarter note = 1000 / 4, eighth note = 1000/8, etc.
     int noteDuration = final_noteDurations[thisNote];
-    digitalWrite(LedPin_Final[thisNote % 3], HIGH);
+    int randRumber = random(0,3);
+    digitalWrite(LedPin_Final[randRumber], HIGH);
     tone(buzzerPin, final[thisNote], noteDuration);
 
     // to distinguish the notes, set a minimum time between them.
@@ -299,7 +300,7 @@ void playFinal() {
     digitalWrite(LedPin_state, HIGH);
     delay(pauseBetweenNotes);
     digitalWrite(LedPin_state, LOW);
-    digitalWrite(LedPin_Final[thisNote % 3], LOW);
+    digitalWrite(LedPin_Final[randRumber], LOW);
     // stop the tone playing:
     noTone(buzzerPin);
   }
