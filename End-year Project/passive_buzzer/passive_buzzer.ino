@@ -1,4 +1,5 @@
 int buzzerPin = 11;
+int buttonPin = 12;
 int LedPin_state = 13;
 int LedPin_Mega = 8;
 int LedPin_Final[] = {
@@ -7,6 +8,7 @@ int LedPin_Final[] = {
 int LedPin_Soviet[] = {
   3, 4, 5
 };
+int buttonState = 0;
 String readString;
 
 #include "pitches.h"
@@ -81,7 +83,7 @@ int soviet_noteDurations[] = {
   1285, 429, 429, 429, 429, 429,
   1285, 429, 429, 429, 429, 429,
   1285, 429, 429, 429, 429, 429,
-  857, 642, 429, 857, 642, 429,
+  857, 642, 204, 857, 642, 204,
   857, 429, 429, 1714,
   1714, 429, 429, 429, 429,
   1285, 429, 1714,
@@ -106,7 +108,7 @@ int sovietDelays[] = {
   1285, 429, 429, 429, 429, 429,
   1285, 429, 429, 429, 429, 429,
   1285, 429, 429, 429, 429, 429,
-  857, 642, 429, 857, 642, 429,
+  857, 642, 204, 857, 642, 204,
   857, 429, 429, 1714,
   1714, 429, 429, 429, 429,
   1285, 429, 1714,
@@ -124,9 +126,9 @@ int final[] = {
   NOTE_C5, NOTE_DS5, NOTE_D5, NOTE_DS5, NOTE_G4,
   NOTE_F4, NOTE_C5, NOTE_AS4, NOTE_C5, NOTE_AS4, NOTE_A4, NOTE_C5,
   NOTE_G4, NOTE_D5, NOTE_C5, NOTE_D5, NOTE_G4,
-  NOTE_DS5, NOTE_DS5, NOTE_D5, NOTE_DS5, NOTE_D5, NOTE_C5,
+  NOTE_DS4, NOTE_DS5, NOTE_D5, NOTE_DS5, NOTE_D5, NOTE_C5,
   NOTE_C5, NOTE_DS5, NOTE_D5, NOTE_DS5, NOTE_G4,
-  NOTE_DS4, NOTE_C5, NOTE_AS4, NOTE_C5, NOTE_AS4, NOTE_A4, NOTE_C5,
+  NOTE_F4, NOTE_C5, NOTE_AS4, NOTE_C5, NOTE_AS4, NOTE_A4, NOTE_C5,
   NOTE_AS4, NOTE_A4, NOTE_AS4, NOTE_C5, NOTE_AS4, NOTE_C5,
   NOTE_D5, NOTE_C5, NOTE_AS4, NOTE_A4, NOTE_G4, NOTE_DS5,
   NOTE_D5, NOTE_D5, NOTE_DS5, NOTE_D5, NOTE_C5,
@@ -141,8 +143,14 @@ int final[] = {
   NOTE_G5,  // 5 * 1/8 NOTE_G5
   NOTE_G5, NOTE_G5, NOTE_A5, NOTE_AS5,  // 2 * 1/8 NOTE_A5
   NOTE_A5, NOTE_G5, NOTE_F5, NOTE_D5,
-  NOTE_AS5, NOTE_A5, NOTE_G5, NOTE_F5,  // 3 * 1/8 NOTE_G5
-  NOTE_F5, NOTE_F5  // 5 * 1/8 NOTE_F5
+  NOTE_AS5, NOTE_A5, NOTE_G5, NOTE_F5,  // 3 * 1/16 NOTE_G5
+  NOTE_F5, NOTE_F5,  // 5 * 1/8 NOTE_F5 // 97 notes here
+  NOTE_G5, NOTE_G5, NOTE_A5, NOTE_AS5,  // 2 * 1/8 NOTE_A5
+  NOTE_A5, NOTE_G5, NOTE_F5, NOTE_F5,  // 3 * 1/16 NOTE_G5
+  NOTE_AS5, NOTE_AS5, NOTE_C6,
+  NOTE_AS5, NOTE_A5, NOTE_G5,  // 111 NOTE HERE
+  NOTE_G5, NOTE_G5, NOTE_A5, NOTE_AS5,  // 3 * 1/16 NOTE_A5
+  NOTE_A5, NOTE_G5, NOTE_F5, NOTE_F5, NOTE_G5, NOTE_A5
 };
 
 // note durations and delays in milliseconds
@@ -169,7 +177,13 @@ int final_noteDurations[] = {
   250, 375, 375, 250,
   500, 375, 125, 500,
   250, 375, 375, 250,
-  250, 1250
+  250, 1250,
+  250, 375, 375, 250,
+  500, 375, 125, 500,
+  250, 500, 500,
+  375, 125, 1500,
+  250, 375, 375, 250,
+  375, 375, 250, 500, 250, 2250
 };
 
 int finalDelays[] = {
@@ -196,15 +210,22 @@ int finalDelays[] = {
   250, 375, 375, 250,
   500, 375, 125, 1750,
   250, 375, 375, 250,
-  250, 2500
+  250, 2500,
+  250, 375, 375, 250,
+  500, 375, 125, 1750,
+  250, 500, 500,
+  375, 125, 2250,
+  250, 375, 375, 250,
+  375, 375, 250, 500, 250, 2750
 };
 
 void setup() {
+  pinMode(buttonPin, INPUT);
   Serial.begin(9600);
   Serial.println("Serial switch test 0015"); // so I can keep track
 }
 
-
+/*
 void playMegalovania() {
   // iterate over the notes of the melody:
   for (int thisNote = 0; thisNote < 87; thisNote++) {
@@ -225,11 +246,17 @@ void playMegalovania() {
     noTone(buzzerPin);
     digitalWrite(LedPin_Mega, LOW);
   }
-}
+}*/
 
 void playSoviet() {
   // iterate over the notes of the melody:
   for (int thisNote = 0; thisNote < 106; thisNote++) {
+
+    buttonState = digitalRead(buttonPin);
+
+    if(buttonState == HIGH) {
+      break;
+    }
 
     // to calculate the note duration, take one second
     // divided by the note type.
@@ -252,7 +279,13 @@ void playSoviet() {
 
 void playFinal() {
   // iterate over the notes of the melody:
-  for (int thisNote = 0; thisNote < 83; thisNote++) {
+  for (int thisNote = 0; thisNote < 121; thisNote++) {
+
+    buttonState = digitalRead(buttonPin);
+
+    if(buttonState == HIGH) {
+      break;
+    }
 
     // to calculate the note duration, take one second
     // divided by the note type.
@@ -266,9 +299,9 @@ void playFinal() {
     digitalWrite(LedPin_state, HIGH);
     delay(pauseBetweenNotes);
     digitalWrite(LedPin_state, LOW);
+    digitalWrite(LedPin_Final[thisNote % 3], LOW);
     // stop the tone playing:
     noTone(buzzerPin);
-    digitalWrite(LedPin_Final[thisNote % 3], LOW);
   }
 }
 
@@ -280,10 +313,10 @@ void loop() {
   }
   readString.trim();
   if (readString.length() > 0) {
-    if (readString == "megalovania") {
+    /*if (readString == "megalovania") {
       Serial.println("Playing Megalovania....");
       playMegalovania();
-    }
+    }*/
     if (readString == "soviet")
     {
       Serial.println("Playing soviet anthem....");
