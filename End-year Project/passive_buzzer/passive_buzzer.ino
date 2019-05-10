@@ -3,7 +3,7 @@ int buttonPin = 12;
 int LedPin_state = 13;
 int LedPin_Mega = 8;
 int LedPin_Final[] = {
-  7, 8, 9
+  6, 7, 8, 9, 10
 };
 int LedPin_Soviet[] = {
   2, 3, 4
@@ -291,8 +291,13 @@ void playFinal() {
     // divided by the note type.
     //e.g. quarter note = 1000 / 4, eighth note = 1000/8, etc.
     int noteDuration = final_noteDurations[thisNote];
-    int randRumber = random(0,3);
-    digitalWrite(LedPin_Final[randRumber], HIGH);
+    int randRumber1 = random(0,5);
+    int randRumber2 = random(0,5);
+    while(randRumber1 == randRumber2) {
+      randRumber2 = random(0,5);
+    }
+    digitalWrite(LedPin_Final[randRumber1], HIGH);
+    digitalWrite(LedPin_Final[randRumber2], HIGH);
     tone(buzzerPin, final[thisNote], noteDuration);
 
     // to distinguish the notes, set a minimum time between them.
@@ -300,7 +305,8 @@ void playFinal() {
     digitalWrite(LedPin_state, HIGH);
     delay(pauseBetweenNotes);
     digitalWrite(LedPin_state, LOW);
-    digitalWrite(LedPin_Final[randRumber], LOW);
+    digitalWrite(LedPin_Final[randRumber1], LOW);
+    digitalWrite(LedPin_Final[randRumber2], LOW);
     // stop the tone playing:
     noTone(buzzerPin);
   }
