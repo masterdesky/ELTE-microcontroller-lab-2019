@@ -1,1 +1,1 @@
-# Microcontrollers and their applications 2018-2019/2 @ ELTE
+# Microcontrollers and their Applications 2018-2019/2 @ ELTE
